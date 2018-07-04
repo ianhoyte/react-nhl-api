@@ -1,0 +1,30 @@
+@import "../core/variables.scss";
+
+.player-search {
+	height:100vh;
+	.initial {
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.playersearch {
+		#player {
+			width: 100%;
+			padding:10px;
+		}
+	}
+	.player-list {
+		padding-top: 20px;
+		list-style-type:none;
+		padding:0;
+		padding-bottom:100px;
+		li {
+			border-bottom:1px solid #dadada;
+			&:last-child {
+				border-bottom:0;
+			}
+		}
+	}
+	
+}

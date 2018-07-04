@@ -1,0 +1,28 @@
+@import "../core/variables.scss";
+
+.home {
+	height: calc(100% - 85px);
+	.info {
+		height: 100%;
+	    display: flex;
+	    align-items:center;
+	    justify-content:center;
+	    flex-direction: column;
+	    .nhl-logo {
+	    	width:100px;
+	    	height:125px;
+	    	background: {
+	    		size:contain;
+	    		repeat:no-repeat;
+	    	}
+	    	display: block;
+	    	margin-bottom:15px;
+	    }
+	    span {
+	    	max-width:600px;
+	    	font-size:18px;
+	    	padding:0 20px;
+	    	text-align: center;
+	    }
+	}
+}

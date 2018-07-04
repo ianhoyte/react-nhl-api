@@ -1,0 +1,135 @@
+@import "../core/variables.scss";
+@import "../core/nhl-logos.scss";
+
+.player {
+	padding-bottom:100px;
+	.header {
+		width: 100%;
+
+		background: {
+			position: center;
+			size:cover;
+			repeat:no-repeat;
+		}
+		img {
+			width:100%;
+			height:auto;
+		}
+	}
+
+	.team-logo  {
+		width:100px;
+		height:100px;
+		display: block;
+		background: {
+			repeat:no-repeat;
+			size:contain;
+		}
+	}
+
+	.img-container {
+		position: relative;
+		vertical-align: middle;
+		width:168px;
+		img {
+			width:100%;
+			height:auto;
+			border-radius: 50%;
+			&.actual {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+	.stats-container {
+		display: flex;
+		.season-heading {
+			span {
+				padding:10px;
+				white-space:nowrap;
+				display: block;
+				text-align: center;
+				&.season-title {
+					padding-top: 19px;
+					background-color: #000;
+					color:#fff;
+				}
+				&.season {
+					background-color:#eaeaea;
+					height:52px;
+				}
+			}
+		}
+		.table-container {
+			background-color: #fff;
+			overflow-x:auto;
+			.stats-table {
+				width: 100%;
+				text-align: center;
+				th {
+					padding: 20px 10px 0px 10px;
+					text-align: center;
+					color:#999;
+					font-weight: normal;
+				}
+				td {
+					padding:20px 10px 20px;
+				}
+				tr {
+					td,th {
+						min-width:50px;
+						&:nth-child(even) {
+							background-color:#eaeaea;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.upcoming-games {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin:0;
+	padding:0;
+	li {
+		&:nth-child(even) {
+			background-color:#eaeaea;
+		}
+	    flex: 0 0 20%;
+	    max-width: 20%;
+	    text-align: center;
+	    padding:40px;
+	    transition: all 0.3s ease;
+
+	    &:hover {
+	    	background-color: #afee99;
+	    }
+			.date {
+				background-color:#1e62ad;
+				margin:0px auto;
+				color:#fff;
+				display: table;
+				text-align: center;
+				font-style:initial;
+				padding:10px;
+			}
+			.home, .away {
+				text-align: center;
+				.title, .text {
+					display: block;
+				}
+				.title {
+					font-weight: bold;
+					font-size: 20px;
+				}
+			}
+			.home {
+				margin-top: 10px;
+				margin-bottom:10px;
+			}
+	}
+}

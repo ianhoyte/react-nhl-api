@@ -1,0 +1,32 @@
+@import "../core/variables.scss";
+
+nav.navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 85px;
+    border-top: 1px solid #e0e4e9;
+    transition: all 0.3s ease;
+    z-index: 1;
+    background: {
+        color: $grey-light;
+        position: center;
+        repeat: no-repeat;
+        size: 140px;
+    }
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    a[class$="Link"] {
+        margin:0 10px;
+        font-size:20px;
+        text-decoration: none;
+        color:#666;
+        transition:all 0.3s ease;
+        text-transform:uppercase;
+        &:hover {
+            color:$blue;
+        }
+    }
+}

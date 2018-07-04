@@ -1,0 +1,27 @@
+// basic vars
+$pFont: 'Sintony', sans-serif;
+$hFont: 'Sintony', sans-serif;
+
+$grey-light: #f8f9f8;
+$grey-dark: #474747;
+
+$blue: #1d9edf;
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}

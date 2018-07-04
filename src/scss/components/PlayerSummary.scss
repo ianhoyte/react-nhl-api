@@ -1,0 +1,43 @@
+.player-summary {
+	padding:10px 15px 9px;
+	display:table;
+	width:100%;
+	text-decoration: none;
+	color: #555;
+	table-layout: fixed;
+	transition: all 0.3s ease;
+
+	.img-container {
+		position: relative;
+		vertical-align: middle;
+		display: table-cell;
+		width:60px;
+		img {
+			width:100%;
+			height:auto;
+			border-radius: 50%;
+			&.actual {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+	.playerInfo {
+		padding-left: 15px;
+		vertical-align: middle;
+		display:table-cell;
+		span {
+			display: table-cell;
+			&.team-position {
+				vertical-align: middle;
+				min-width:80px;
+				font-size: 11px;
+				padding-left: 20px;
+			}
+			&.name {
+				vertical-align: middle;
+			}
+		}
+	}
+}
