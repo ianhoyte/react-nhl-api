@@ -1,6 +1,6 @@
 ## About
 
-This is a react based app that uses [axios](https://www.kevinsidwar.com/iot/2017/7/1/the-undocumented-nhl-stats-api) to request JSON responses from the public, undocumented NHL API.  Please note that this is not endorsed by the NHL and exists as solely an educational tool.
+This is a react based app that uses [axios](https://www.npmjs.com/package/axios) to request JSON responses from the public, undocumented NHL API.  Please note that this is not endorsed by the NHL and exists as solely an educational tool.
 
 ## Installation
 
